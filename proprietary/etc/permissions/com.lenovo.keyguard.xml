@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <!-- 整数范例 -->
+    <ExampleInt>100</ExampleInt>
+    <!-- 布尔范例 -->
+    <ExampleBool>true</ExampleBool>
+    <!-- 实数范例 -->
+    <ExampleFloat>-0.5</ExampleFloat>
+    <!-- 字串范例 -->
+    <ExampleString>hello</ExampleString>
+
+    <!-- 【依赖硬件】支持防误触功能开关，默认true开启 -->
+    <!-- <SupportAntiMisOperation>false</SupportAntiMisOperation> -->
+
+    <!-- 缺省封面应用，不指定或指定无效将会被视为使用默认keyguard（主题引擎） -->
+    <!--<CoverAppComponentDefault>com.lenovo.coverapp.simpletime2/com.lenovo.coverapp.simpletime.MainActivity</CoverAppComponentDefault>-->
+
+    <!-- 封面应用控制，使用杀死型还是后台型，默认true（杀死型） -->
+    <CoverAppFinishOrMoveback>true</CoverAppFinishOrMoveback>
+
+    <!-- 封面应用开发模式，默认false -->
+    <CoverAppDevMode>false</CoverAppDevMode>
+
+    <!-- 本设备所支持的主题引擎的resource_templateversion串，主题中心会查询并上报服务器作为主题包过滤依据：
+         000-099：安卓系统（0：所有最早的代码主题，1：所有最早的脚本主题，2：L上的支持common的安卓系统主题）
+         100-199：脚本（102：L上的支持common的脚本主题）
+         200-299：简约（202：L上的支持common的简约主题）
+         300-399：泡泡（302：L上的支持common的泡泡主题）
+         400-499：幻想（402：L上的支持common的幻想主题）
+         500-599：杂志（502：L上的支持common的杂志主题）
+         10000-10099：微乐（10000：微乐首版）
+         10100-10199：掌酷（10100：掌酷首版）
+         99999：合作预研时临时使用
+          -->
+    <ResourceTemplateVersion>0;1;2;102;202;302;402;502;10000;10100;</ResourceTemplateVersion>
+
+    <!-- 这是因为aio上不支持安全相机所以增加该项来对aio做特殊处理来避免有安全锁时默认锁屏无法进入相机 -->
+    <KeyguardSecureCameraSupport>true</KeyguardSecureCameraSupport>
+
+    <!-- 控制系统在亮屏时连击电源键的保护间隔，这个间隔内的电源键事件统统忽略，缺省500ms -->
+    <KeyguardMinIntervalTwoPowerKey>800</KeyguardMinIntervalTwoPowerKey>
+
+</Root>
